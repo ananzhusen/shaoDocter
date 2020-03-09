@@ -1,0 +1,149 @@
+/* pages/home/home.wxss */
+.swiper{
+  width: 100%;
+  margin: 0rpx;
+  height: 100%;
+}
+.swiper image{
+  display:inline-block;
+  width: 100%;
+  height: 100%;
+}
+.navTop{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  padding:0rpx 0rpx;
+  box-sizing: border-box;
+  background: rgb(247, 244, 244);
+  color:black;
+  justify-content: space-around;
+}
+.navTopItem{
+  display: flex;
+  flex-direction: column;
+  width: 200rpx;
+  height: 120rpx;
+  font-size:25rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+.navTopItem image{
+  align-self: center;
+  width:83rpx;
+  height: 80rpx;
+  display: inline-block;
+}
+
+.navTopItemchenged_1{
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color:white;
+  width: 200rpx;
+  height: 120rpx;
+  font-size:25rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+.navTopItemchenged_1 image{
+  align-self: center;
+  width:83rpx;
+  height: 80rpx;
+  display: inline-block;
+}
+
+.navTopItemchenged_2{
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color:white;
+  width: 200rpx;
+  height: 120rpx;
+  font-size:25rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+.navTopItemchenged_2 image{
+  align-self: center;
+  width:83rpx;
+  height: 80rpx;
+  display: inline-block;
+}
+
+.navTopItemchenged_3{
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color:white;
+  width: 200rpx;
+  height: 120rpx;
+  font-size:25rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+.navTopItemchenged_3 image{
+  align-self: center;
+  width:83rpx;
+  height: 80rpx;
+  display: inline-block;
+}
+
+.navTopItemchenged_4{
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color:white;
+  width: 200rpx;
+  height: 120rpx;
+  font-size:25rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+.navTopItemchenged_4 image{
+  align-self: center;
+  width:83rpx;
+  height: 80rpx;
+  display: inline-block;
+}
+.the_company_culture{
+  display: flex;
+  flex-direction: column;
+}
+.woker_container{
+  padding: 20rpx 0rpx;  
+}
+.worker_introduce{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  padding: 10rpx 0rpx;
+}
+.worker_picture{
+  width: 300rpx;
+  height: 400rpx;
+}
+.worker_information{
+  display: flex;
+  flex-direction: column;
+}
+.company-contact{
+  display: flex;
+  flex-direction:row;
+}
+.address-instructions{
+  padding: 0rpx 5rpx 0rpx 20rpx;
+  color: blue;
+}
+.navigation-icon{
+  height: 50rpx;
+  width: 50rpx;
+}
+.showmap{
+  height: 500rpx;
+}

@@ -1,0 +1,109 @@
+<!--pages/information/information.wxml-->
+<view class="container">
+<scroll-view scroll-y="true">
+  <view class='Item'>
+    <text class="GuardianorChildren_text">监护人信息</text>
+  </view >
+  <view class="form_input">
+    <form class="User_information">
+      <view class="one_input">
+        <view class="information_input">
+          <text class="text_explain" decode="{{true}}">姓名：</text>
+          <input maxlength="5" class="input_box" bindblur="getGuardianName"></input>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class="one_input">
+        <view class="information_input">
+          <radio-group bindchange="getGuardianSex">
+            <text class="text_explain" decode="{{true}}">性别：</text>
+            <radio name="male" value="男"><text class="text_choice">男</text></radio>
+            <radio name="famale" value="女"><text class="text_choice">女</text></radio>
+          </radio-group>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class="one_input">
+        <view class="information_input">
+          <picker mode="date" class="birth_picker" value="{{GdnbirthData}}" start="1919-01-01" end="{{currentDate}}" bindchange="getGdnBirth">
+            <text class="text_explain" decode="{{true}}">生日：{{GdnbirthData}}</text>
+          </picker>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class="one_input">
+        <view class="information_input">
+          <text class="text_explain">与儿童的关系：</text>
+          <input class="input_box" placeholder="例如:父亲" bindblur="getGdnRelation"></input>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class="one_input">
+        <view class="information_input">
+          <text class="text_explain" decode="{{true}}">电话号码：</text>
+          <input maxlength="11" bindblur="isPhoneFormat"  type="number" class="input_box"  placeholder="请输入正确的手机号"></input>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class="one_input">
+        <view class="information_input">
+          <text class="text_explain" decode="{{true}}">家庭住址：</text>
+          <input class="input_box" placeholder="例如:荆州市长江大学东校区" bindblur="getGdnAdress"></input>
+        </view>   
+        <view class="line"></view>
+      </view> 
+      <view class="one_input">
+        <view class="information_input">
+          <text class="text_explain" decode="{{true}}">工作地址：</text>
+          <input class="input_box" placeholder="例如:荆州市长江大学东校区" bindblur="getGdnWorkplase"></input>
+        </view> 
+        <view class="line"></view>
+      </view> 
+    </form>
+  </view>
+    <view class="children_information">
+      <text class='GuardianorChildren_text'>儿童信息填写</text>
+      <view class="increaseOrdecrease">
+        <image class="modify_child" src="/images/icon/add.png" bindtap="addChildNum"></image>
+        <text class="childNum">{{childrenNumber}}</text>
+        <image class="modify_child" src="/images/icon/sub.png" bindtap="subChildNum"></image>
+      </view>
+    </view>
+    <view class="form_input">
+      <form class="Child_information" wx:for="{{childrenNumber}}" wx:key="this">
+        <view class="one_input">
+          <view class="information_input">
+              <view class="information_input">
+                <text  class="text_explain">姓名：</text>
+                <input maxlength="5" id="{{item}}" class="input_box" bindblur="getChildName"></input>
+              </view>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="one_input">
+        <view class="information_input">
+            <radio-group bindchange="getChildSex" id="{{item}}">
+              <text class="text_explain">性别：</text>
+              <radio name="male" value="男"><text class="text_choice">男</text></radio>
+              <radio name="famale" value="女"><text class="text_choice">女</text></radio>
+            </radio-group>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="one_input">
+        <view class="information_input">
+            <picker class="birth_picker" id="{{item}}" mode="date" value="{{ChildbirthData['item']}}" start="1919-01-01" end="{{currentDate}}" bindchange="getChildBirth" >
+              <text decode="{{true}}"class="text_explain">生日：{{ChildbirthData[item]}}</text>
+            </picker>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="segmentline"></view>
+      </form>
+    </view>
+  <view class='Item'>
+    <button class="submitbutton" size="defalt" bindtap="switchToBar">提交</button>
+  </view>
+</scroll-view>
+</view>
+

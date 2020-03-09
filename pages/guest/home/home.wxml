@@ -1,0 +1,99 @@
+<!--pages/guest/home/home.wxml-->
+<import src="/pages/template/template.wxml"/>
+<view class='container'>
+  <scroll-view scroll-y="true" class="page-body">
+    <!--轮播图-->
+    <view class='swiper'>
+    <!-- 参数分别是 指示点 自动播放 切换时间 显示时间 前边距 后边距 -->
+  <swiper indicator-dots="{{indicatordots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+        <block wx:for-items="{{banner_url}}" wx:key="this">
+          <swiper-item>
+            <image src="{{item}}" mode="widthFix"> </image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--导航-->
+    <view class="navTop">
+      <block wx:for="{{navTopItems}}" wx:key="this">
+        <view class="{{current_id==item.id ?'navTopItem':'navTopItemchenged_'+item.id}}" data-id="{{item.id}}" data-index="{{index}}"bindtap="select_nav">
+          <image src="{{item.icon}}"></image>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+    <!--导航具体内容-->
+    <view class="navDetail">
+      <view wx:if="{{current_index==0}}">
+        <!--公司文化-->
+        <view class="the_company_culture">
+            <image src="{{list[current_index][0].picture_path}}"></image>
+            <text decode="{{true}}">{{list[current_index][0].text_content1}}</text>
+            <text decode="{{true}}">{{list[current_index][0].text_content2}}</text>
+        </view>
+      </view>
+      <view wx:elif="{{current_index==1}}">
+        <!--团队介绍文化-->
+        <view class="team_introduction">
+          <block wx:for="{{list[current_index]}}" wx:key="this">
+            <view class="woker_container">
+              <view class='worker_introduce'>
+               <view class="worker_picture">
+                <image url="{{item.picture}}"></image>
+               </view>
+               <view class="worker_information">
+                <text>姓名：{{item.name}}</text>
+                <text>职业： {{item.profession}}</text>
+                <text>工作经验： {{item.experience}}</text>
+                <text>擅长： {{item.goodAt}}</text>
+                <text>自我评价： {{item.selfIntroduction}}</text>
+               </view>
+             </view>
+            </view>
+          </block>
+        </view>
+      </view>
+      <view wx:elif="{{current_index==2}}">
+        <!--推拿文化-->
+        <view class="Massage_culture">
+          <block wx:for="{{list[current_index]}}" wx:key="this">
+            <text></text>
+          </block>
+        </view>
+      </view>
+      <view wx:else>
+        <!--联系我们-->
+        <view class="Contact_us">
+          <block wx:for="{{list[current_index]}}" wx:key="this">
+            <text>{{item.theCompanyName}}</text>
+            <view  class="company-contact">
+              <text>电话：{{item.telephone}}</text>
+              <view bindtap="makeAcall">
+                <text class="address-instructions">拨打电话</text>
+                <image class="navigation-icon" src="/images/icon/call.png"></image>
+              </view>
+              <view>
+                <button type="primary" size="mini" bindtap="makeAcallSave" >保存</button>
+              </view>
+            </view>
+            <view>
+              <text>微信：{{item.theCompanyWechat}}</text>
+            </view>
+            <view class="company-contact">
+            <text>地址：{{item.address}}</text>
+              <view bindtap="clickNavIcon">
+                <text class="address-instructions">地图/导航</text>
+                <image class="navigation-icon" src="/images/icon/navigation.png"></image>
+              </view>
+            </view>
+          </block>
+          <view class="showmap" hidden="{{hiddenMap}}">
+           <map longitude="{{localLongitude}}" latitude="{{localLatitude}}" scale="18" markers="{{addressMarker}}" circles="{{circles}}" polyline="{{polyline}}" show-compass="true"></map>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<template is="tabBar" data="{{tabBar:tabBar}}"></template>
+<!--is：模板名   data:数据   要在最前面导入模板-->

@@ -1,0 +1,85 @@
+<!--pages/master/propaganda/page/stuffInfo/stuffInfo.wxml-->
+<view class="view_all">
+  <view>
+  </view>
+<!--搜索栏-->
+  <view>
+    <view class="head_search" hidden="{{searchDisabled}}">
+      <view class="parent">
+        <input type="text" disabled="{{searchDisabled}}" class="search" placeholder="输入员工编号或姓名" bindblur="getInput"/>
+        <button class="btn"  disabled="{{searchDisabled}}" bindtap="clickSearch"><image class="icon_kf" src="/images/icon/search.png"></image></button>  
+      </view>
+      <view class="view_edit">
+        <button class="btn_edit" bindtap="newbuiltInfo">新建信息</button>
+      </view>
+    </view>
+  </view>
+  <!--信息呈现-->
+    <view hidden="{{formHidden}}">
+      <view class="form_input">
+        <view class="one_input">
+          <view class="information_input">
+            <text  class="text_explain">姓名：</text>
+            <input class="input_box" value="{{oneStaff.TechName}}"  disabled="{{cannotInput}}" bindblur="getStaffName"></input>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="one_input">
+          <view class="information_input">
+            <text  class="text_explain">员工号：</text>
+            <input class="input_box" value="{{oneStaff.TechID}}"  disabled="true" ></input>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="one_input">
+          <view class="information_input">
+            <text  class="text_explain">电话：</text>
+            <input class="input_box" value="{{oneStaff.TechPhone}}"  disabled="{{cannotInput}}" bindblur="getStaffPhone"></input>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="one_input">
+          <view class="information_input">
+            <text  class="text_explain">店内职责：</text>
+            <input class="input_box" value="{{oneStaff.TechGrade}}"  disabled="{{cannotInput}}" bindblur="getStaffGrade"></input>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="one_input">
+          <view class="information_input">
+            <text  class="text_explain">工作经验：</text>
+            <input class="input_box" value="{{oneStaff.TechWorkExperience}}年"  disabled="{{cannotInput}}" bindblur="getStaffWorkExprience"></input>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="one_input">
+          <view class="information_input">
+            <text  class="text_explain">员工评价：</text>
+            <textarea class="textarea_box" value="{{oneStaff.TechEvaluation}}" disabled="{{cannotInput}}" bindblur="getStaffExplain"></textarea>
+          </view>
+          <view class="segmentline"></view>
+        </view>
+        <view class="one_input">
+          <view class="information_input">
+            <text  class="text_explain">员工图片：</text>
+            <image class="image_stuff" bindtap="uploadPicture" src="{{StaffPicture}}"></image>
+          </view>
+        </view>
+        <!--编辑按钮-->
+        <view>
+          <view class="view_twobutton" hidden="{{twobuttonhiden}}">
+            <button class="button_two" bindtap="deleteStuffInfo">删除数据</button>
+            <button class="button_one" bindtap="naviToDetail">了解详细信息</button>
+            <button class="button_two" bindtap="editStuffInfo">编辑信息</button>
+          </view>
+
+          <view class="view_sureorcancel" hidden="{{surebuttonhiden}}">
+            <button class="button_cancel" bindtap="cancelbutton">取消</button>
+            <button class="button_sure" bindtap="surebutton">确定</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  <view>
+  </view>
+</view>

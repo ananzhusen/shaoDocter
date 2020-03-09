@@ -1,0 +1,149 @@
+<!--pages/master/propaganda/page/storeInfo/storeInfo.wxml-->
+<view>
+<!--导航栏-->
+  <view>
+    <view class="nav_view">
+      <view class="nav_unit">
+        <view bindtap="clickNavT">
+        <text class="{{currentClick==1 ?'navClick':'navUnclick'}}">推拿</text>
+        </view>
+        <view class="{{currentClick==1 ?'navClickbottom':'navUnclickbottom'}}">
+        </view>
+      </view>
+      <view class="nav_unit">
+        <view bindtap="clickNavM">
+          <text class="{{currentClick==2 ?'navClick':'navUnclick'}}">药店</text>
+        </view>
+        <view class="{{currentClick==2 ?'navClickbottom':'navUnclickbottom'}}">
+        </view>
+      </view>
+      <view class="nav_unit">
+        <view bindtap="clickNavS">
+          <text class="{{currentClick==3 ?'navClick':'navUnclick'}}">其他</text>
+        </view>
+        <view class="{{currentClick==3 ?'navClickbottom':'navUnclickbottom'}}">
+        </view>
+      </view>
+    </view>
+  </view>
+<!--搜索栏-->
+  <view>
+   <view>
+    <view class="head_search" hidden="{{searchDisabled}}">
+      <view class="parent">
+        <input type="text" disabled="{{searchDisabled}}" class="search" placeholder="{{search_explain}}" bindblur="getInput"/>
+        <button class="btn"  disabled="{{searchDisabled}}" bindtap="clickSearch"><image class="icon_kf" src="/images/icon/search.png"></image></button>  
+      </view>
+      <view class="view_edit">
+        <button class="btn_edit" bindtap="newbuiltInfo">新建信息</button>
+      </view>
+    </view>
+   </view>
+  </view>
+<!--商品呈现-->
+  <view class="form_input"  hidden="{{formHidden}}" >
+    <form bindsubmit="sureStoreInfo">
+      <view class="one_input">
+        <view class="information_input">
+          <text  class="text_explain">商品名：</text>
+          <input class="input_box" name="name" value="{{currentClick==1 ?oneStore.TuinaName:(currentClick==2 ?oneStore.MedicName:oneStore.SidelineName)}}"  disabled="{{cannotInput}}"></input>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class="one_input">
+        <view class="information_input">
+          <text  class="text_explain">商品编号：</text>
+          <input class="input_box" name='id'  value="{{currentClick==1 ?oneStore.TuinaID:(currentClick==2 ?oneStore.MedicID:oneStore.SidelineID)}}"  disabled="true"></input>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class="one_input">
+        <view class="information_input">
+          <text  class="text_explain">商品简介：</text>
+          <input class="input_box" name='Brief' value="{{currentClick==1 ?oneStore.TuinaBriefIntro:(currentClick==2 ?oneStore.MedicBriefIntro:oneStore.SidelineBriefIntro)}}"  disabled="{{cannotInput}}"></input>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class="one_input">
+        <view class="information_input">
+          <text  class="text_explain">商品单价：</text>
+          <input class="input_box" name='price' value="{{currentClick==1 ?oneStore.TuinaPrice:(currentClick==2 ?oneStore.MedicPrice:oneStore.SidelinePrice)}}"  disabled="{{cannotInput}}"></input>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view wx:if="{{currentClick==3}}">
+        <view class="one_input">
+          <view class="information_input">
+            <text  class="text_explain">可供服务：</text>
+            <input class="input_box" name='isservice' value="{{(oneStore.IsServiceable)?'是':'否'}}"  disabled="{{cannotInput}}"></input>
+          </view>
+          <view class="line"></view>
+        </view>
+      </view>
+      <view wx:elif="{{currentClick==1}}">
+       <view class="one_input">
+          <view class="information_input">
+            <text  class="text_explain">推拿级别：</text>
+            <input class="input_box" name='grade' value="{{oneStore.TuinaGrade}}"  disabled="{{cannotInput}}"></input>
+          </view>
+          <view class="line"></view>
+        </view>
+        <view class="one_input">
+          <view class="information_input">
+            <text  class="text_explain">可供服务：</text>
+            <input class="input_box" name='isservice' value="{{(oneStore.IsServiceable)?'是':'否'}}"  disabled="{{cannotInput}}"></input>
+          </view>
+          <view class="line"></view>
+        </view>
+      </view>
+      <view wx:else="{{currentClick==2}}">
+        <view class="one_input">
+            <view class="information_input">
+              <text  class="text_explain">库存还有：</text>
+              <input class="input_box" name='surplus' value="{{oneStore.MedicSurplus}}"  disabled="{{cannotInput}}"></input>
+            </view>
+            <view class="line"></view>
+        </view>
+      </view>
+
+      <view class="one_input">
+        <view class="information_input">
+          <text  class="text_explain">历史销售量：</text>
+          <input class="input_box" name='num' value="{{currentClick==1?oneStore.TuinaNum:(currentClick==2 ?oneStore.MedicSales:oneStore.SidelineNum)}}"  disabled="{{cannotInput}}"></input>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class="one_input">
+        <view class="information_input">
+          <text  class="text_explain">商品图片：</text>
+          <image class="image_store" bindtap="uploadPicture" src="{{storePicture}}"></image>
+        </view>
+        <view class="segmentline"></view>
+      </view>
+       <view class="one_input">
+        <view class="information_input">
+          <text  class="text_explain">详细介绍：</text>
+          <view bindtap="uploadPictures" class="detailIntroView">
+          <block wx:for="{{storeDetailPictures}}" wx:key="this">
+            <view>
+              <image class="image_store"  src="{{item}}"></image>
+            </view>
+          </block>
+          </view>
+        </view>
+      </view>
+              <!--编辑按钮-->
+        <view>
+          <view class="view_twobutton" hidden="{{twobuttonhiden}}">
+            <button class="button_one" bindtap="deleteStoreInfo">删除数据</button>
+            <button class="button_two" bindtap="editStoreInfo">编辑信息</button>
+          </view>
+
+          <view class="view_sureorcancel" hidden="{{surebuttonhiden}}">
+            <button class="button_cancel" bindtap="cancelbutton">取消</button>
+            <button class="button_sure" form-type="submit">确定</button>
+          </view>
+        </view>
+    </form>
+  </view>
+</view>

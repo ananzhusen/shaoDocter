@@ -1,0 +1,23 @@
+<!--pages/select/select.wxml-->
+<view>
+  <view class="text_explain">
+   <text class="text_explain_context">我们需要了解您的身份：</text>
+  </view>
+  <view >
+    <view class="twobutton">
+      <button class="button_guest" size="default" bindtap="selectUser">我是顾客</button>
+      <button class="button_master" size="default" bindtap="selectStaff">我是推拿师</button>
+    </view>
+    <view hidden="{{hidInput}}">
+      <view class="text_explain">
+        <text class="text_explain_context">我们需要您输入密码：</text>
+      </view >
+      <view class="input_view">
+        <input class="input_password" password="true" bindblur="companyPwd"></input>
+      </view>
+      <view class="ensure_password">
+        <button class="button_sure" size="default"bindtap="isPwdRight">确定</button>
+      </view>
+    </view>
+  </view>
+</view>

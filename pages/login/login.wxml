@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="outmodule">
+  <view class="login_module">
+    <form bindsubmit="formsubmit">
+      <view class="information_input username_input">  
+        <input class="inputStyle" type="number" placeholder="请输入手机号" name="name" bindblur="isPhoneFormat"></input>
+      </view>
+      <view class="information_input password_input">  
+        <input type="text" class="inputStyle" password="true" placeholder="请输入密码" name="pwd" bindblur="getuserpwd"></input>
+      </view>
+      <view class="submit_button">
+        <button  style="color:#DCDCDC;" class="loginbutton" bindtap="switchToBar" size="default" type="default" >登录</button>
+      </view>
+    </form>
+    <view class="switchtoregister">
+      <navigator class="register" url="/pages/register/register" open-type="navigate">还没有账户？注册</navigator>
+    </view>
+  </view>
+</view>

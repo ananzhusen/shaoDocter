@@ -1,0 +1,6 @@
+<!--pages/master/mainten/mainten.wxml-->
+<import src="/pages/template/template.wxml"/>
+<text>pages/master/mainten/mainten.wxml</text>
+
+<template is="tabBar" data="{{tabBar:tabBar}}"></template>
+<!--is：模板名   data:数据   要在最前面导入模板-->

@@ -1,0 +1,5 @@
+/* pages/guest/store/store.wxss */
+.test{
+  height: 200rpx;
+  background: 	white;
+}

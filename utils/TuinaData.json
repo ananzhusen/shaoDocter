@@ -1,0 +1,36 @@
+{
+    "TuinaName":"邵技师推拿",
+    "TuinaID":"T0001", 
+    "TuinaGrade":"老板推拿",
+    "TuinaImage":"cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001.jpg",
+    "TuinaBriefIntro":"手法娴熟力道深厚评价很高",
+    "TuinaPrice":"100.88",
+    "IsServiceable":true,
+    "TuinaDetailIntro":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T000101.jpg",
+                      "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T000102.jpg",
+                      "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T000103.jpg"]
+ }
+ {
+  "TuinaName":"李技师推拿",
+  "TuinaID":"T0001", 
+  "TuinaGrade":"高级推拿",
+  "TuinaImage":"cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001.jpg",
+  "TuinaBriefIntro":"手法娴熟力道深厚评价很高",
+  "TuinaPrice":"100.88",
+  "IsServiceable":true,
+  "TuinaDetailIntro":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T000101.jpg",
+                    "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T000102.jpg",
+                    "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T000103.jpg"]
+}
+{
+    "TuinaName":"赵技师推拿",
+    "TuinaID":"T0001", 
+    "TuinaGrade":"高级推拿",
+    "TuinaImage":"cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001.jpg",
+    "TuinaBriefIntro":"手法娴熟力道深厚评价很高",
+    "TuinaPrice":"100.88",
+    "IsServiceable":true,
+    "TuinaDetailIntro":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T000101.jpg",
+                      "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T000102.jpg",
+                      "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T000103.jpg"]
+  }

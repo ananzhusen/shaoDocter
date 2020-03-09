@@ -1,0 +1,53 @@
+/* pages/select/select.wxss */
+.twobutton{
+  display: flex;
+  flex-direction: row;
+}
+.text_explain{
+  margin: 30rpx 0 30rpx 0;
+}
+.text_explain_context{
+  color: #3CB371;
+  margin: 0rpx 0 0 20rpx;
+}
+.button_guest{
+  color: #3CB371;
+  background-color: white;
+  width: 300rpx;
+  height: 125rpx;
+  padding: 0rpx 0rpx 20rpx 0;
+  border-top:2rpx solid rgb(194, 191, 191);
+  border-left:2rpx solid rgb(194, 191, 191);
+  border-bottom: 10rpx solid rgb(194, 191, 191);
+  border-right: 10rpx solid rgb(194, 191, 191);
+  border-radius:20rpx;
+}
+.button_master{
+  color: white;
+  background-color: #3CB371;
+  border-top:2rpx solid rgb(12, 133, 52);
+  border-left:2rpx solid rgb(12, 133, 52);
+  border-bottom: 10rpx solid rgb(12, 133, 52);
+  border-right: 10rpx solid rgb(12, 133, 52);
+  border-radius:20rpx;
+}
+.input_view{
+  margin: 10rpx 100rpx 0 100rpx;
+
+}
+.input_password{
+  width: 100%;
+  height: 50rpx;
+  border-bottom:2rpx solid gray;
+}
+.ensure_password{
+  margin: 100rpx 0 0 300rpx;
+}
+.button_sure{
+  width: 200rpx;
+  color: white;
+  background-color: #3CB371;
+  border-bottom: 10rpx solid rgb(12, 133, 52);
+  border-right: 10rpx solid rgb(12, 133, 52);
+  border-radius:20rpx;
+}

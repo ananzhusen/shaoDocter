@@ -1,0 +1,30 @@
+/* pages/user/user.wxss */
+.user{
+  height: 250rpx;
+  background:#3CB371;
+}
+.submit_button{
+    display: flex;
+    justify-content: center;
+  }
+.user-info{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+  padding: 50rpx;
+}
+.user-image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: white;
+}
+.user-text{
+  display:flex;
+  flex-direction: column;
+  color: white;
+}
+.exit-login{
+  padding: 50rpx 0rpx;
+}

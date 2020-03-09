@@ -1,0 +1,51 @@
+/* pages/login/login.wxss */
+.outmodule{
+  width: 100%;
+  height: 800rpx;
+  display: flex;
+  justify-content: center;
+}
+.login_module{
+  width: 80%;
+  height: 500rpx;
+  display: flex;
+  padding: 50rpx 0rpx;
+  flex-direction: column;
+  background-color:white;
+}
+
+.information_input{
+  height: 150rpx;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  border-bottom: 5rpx solid #ccc;
+}
+
+.inputStyle{
+  padding: 80rpx 100rpx 2rpx 0rpx;
+  font-size: 18px;
+}
+
+.submit_button{
+  padding: 50rpx 0rpx;
+}
+.loginbutton{
+  color: 	#DCDCDC;
+}
+button::after{
+ border:none;
+}
+.switchtoregister{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.register{
+  text-size-adjust: 2rpx;
+  size: 2rpx;
+  color:blue;
+  margin:0 auto;
+  text-align: center;
+}
+

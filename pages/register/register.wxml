@@ -1,0 +1,45 @@
+<!--pages/register/register.wxml-->
+<view class="outmodule">
+  <view class="login_module">
+    <form bindsubmit="formsubmit">
+      <view hidden="{{tipHidden}}">
+        <text style="color:red">
+          请输入6-20个字母、数字、下划线
+        </text>
+      </view>
+      <view class="information_input username_input">  
+        <input class="inputStyle" type="number" placeholder="请输入手机号" name="name" bindblur="isPhoneFormat"></input>
+      </view>
+      <view class="information_input verificationcode_input">
+        <view class="username_input">  
+          <input class="inputStyle" type="number" placeholder="请输入验证码" name="name" bindblur="isVericodeRight"></input>
+        </view>
+        <view  class="vcodeView" bindtap="getVcode">
+          <view class="vcodeStyle">{{codename}}</view>
+        </view>
+      </view>
+      <view class="information_input password_input">  
+        <input type="text" class="inputStyle" password="true" placeholder="请输入密码" name="pwd" bindblur="firstpwd"></input>
+      </view>
+      <view class="information_input password_input">
+        <input class="inputStyle" type="text" password="true" placeholder="再次输入密码"  name="pwd" bindblur="secondpwd"></input>
+      </view>
+      <checkbox-group bindchange="bindAgreeChange">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                    <view class="weui-agree__checkbox-icon">
+                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                    </view>
+                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                </view>
+            </label>
+        </checkbox-group>
+      <view class="submit_button">
+        <button  style="color:#DCDCDC;" class="loginbutton" bindtap="switchToInfo" size="default" type="{{buttontype}}" >注册</button>
+      </view>
+    </form>
+  </view>
+</view>
+
+

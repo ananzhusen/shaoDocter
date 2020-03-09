@@ -1,0 +1,71 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color:	#F9F7F7;
+}
+
+.GuardianorChildren_text{
+  font-size: 32rpx;
+  color: #3CB371;
+  display: table;
+  width: auto;
+  white-space: nowrap; 
+  border-spacing: 0.4rem 0;
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+}
+ 
+.GuardianorChildren_text::before,.GuardianorChildren_text::after{
+  display: table-cell;
+  content: "";
+  width: 50%;
+  background: linear-gradient(#3CB371, #3CB371) repeat-x center;
+  background-size: 0.1rem 0.1rem;
+}
+
+.text_choice{
+  white-space:nowrap;
+  margin: 0 20rpx 0 10rpx;
+  font-size: 15px;
+}
+
+.children_information{
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx 10rpx;
+}
+.increaseOrdecrease{
+  display: flex;
+  flex-direction: row;
+  align-self:flex-end;
+  margin: 10rpx 40rpx 10rpx 0rpx;
+}
+.birth_picker{
+  width: 100%;
+}
+.modify_child{
+  align-self: center;
+  width:50rpx;
+  height: 50rpx;
+  display: inline-block;
+}
+.childNum{
+  margin: 0rpx 20rpx 0rpx 20rpx;
+  align-self: center;
+  font-size: 15px;
+}
+.Item{
+    padding: 30rpx 10rpx;
+}
+.segmentline{
+  margin: 50rpx 5rpx 20rpx 20rpx;
+  width: 95%;
+  height: 10rpx;
+  border-top: 3rpx dashed #a7a8a8;
+  }
+  .submitbutton{
+    color: white;
+    background-color: #3CB371;
+    border-width: 0;
+    margin: 20rpx 0 50rpx 0;
+  }

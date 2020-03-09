@@ -1,0 +1,27 @@
+<!--pages/master/propaganda/propaganda.wxml-->
+<import src="/pages/template/template.wxml"/>
+<view class="container">
+  <view>
+    <view class="view_column">
+    <view class="view_row">
+        <view class="view_company" bindtap="navigateCompany">
+          <text class="text_">公司</text>
+        </view>
+        <view class="view_stuff" bindtap="navigateStuffInfo">
+          <text class="text_">员工</text>
+        </view>
+    </view>
+    <view  class="view_row">
+      <view class="view_store" bindtap="navigateStoreInfo">
+        <text class="text_">商品</text>
+      </view>
+      <view class="view_push" bindtap="navigatePush">
+        <text class="text_">推送</text>
+      </view>
+    </view>
+    </view>
+  </view>
+</view>
+
+<template is="tabBar" data="{{tabBar:tabBar}}"></template>
+<!--is：模板名   data:数据   要在最前面导入模板-->

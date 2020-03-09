@@ -1,0 +1,8 @@
+<!--pages/guest/store/store.wxml-->
+<import src="/pages/template/template.wxml"/>
+<text>详情订单页面</text>
+<view class="test">
+ 
+</view>
+<template is="tabBar" data="{{tabBar:tabBar}}"></template>
+<!--is：模板名   data:数据   要在最前面导入模板-->

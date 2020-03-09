@@ -1,0 +1,6 @@
+<!--pages/master/propaganda/page/staffInfo/staffDetailInfo/staffDataInfo.wxml-->
+<view>
+  <view>
+    <view>员工号{{staffNum}}</view>
+  </view>
+</view>

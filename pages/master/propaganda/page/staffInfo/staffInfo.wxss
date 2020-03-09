@@ -1,0 +1,74 @@
+/* pages/master/propaganda/page/stuffInfo/stuffInfo.wxss */
+.view_all{
+  display: flex;
+  flex-direction: column;
+  background-color:	#F9F7F7;
+  height: 1500px;
+}
+
+.head_search{
+  margin: 20px 10px 10px 10px;
+}
+.parent {
+  position: relative;
+  margin: 0 200rpx 0 0;
+  width: 70%;
+}
+.search {
+  background-color: white;
+  width: 135px;
+  height: 30px;
+  border-radius: 18px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 20px;
+  padding-right: 40px;
+  position: absolute;
+}
+.btn {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  background: no-repeat 0px 0px;
+  top: -2px;
+  left: 150px;
+  border: none;
+  outline: none;
+}
+
+.icon_kf{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.view_edit{
+  margin:  0 0 10rpx;
+  width: 30%;
+}
+.btn_edit{
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 18px;
+  color: white;
+  background-color: #3CB371 ;
+  border:0px;
+  border-color:#3CB371;
+  font-size: 15px;
+  left: 200px;
+}
+
+.textarea_box{
+  border: 0px ;
+  margin: 0rpx 85rpx 10rpx 0;
+  font-size: 15px;
+  height: 200rpx;
+  color: grey;
+}
+.image_stuff{
+  margin: 20rpx 0 0 30rpx;
+  width: 120px;
+  height: 130px;
+}
+
+ 

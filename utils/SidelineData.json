@@ -1,0 +1,36 @@
+{
+  "SidelineName":"邵技师拔罐",
+  "SidelineID":"S0001", 
+  "SidelineImage":"cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S0001.jpg",
+  "SidelineBriefIntro":"适用于风湿痹痛、腹痛、消化不良",
+  "SidelinePrice":"100.88",
+  "IsServiceable":true,
+  "SidelineDetailIntro":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S000101.jpg",
+                       "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S000102.jpg",
+                       "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S000103.jpg"]
+
+}
+{
+  "SidelineName":"李技师拔罐",
+  "SidelineID":"S0001", 
+  "SidelineImage":"cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S0001.jpg",
+  "SidelineBriefIntro":"适用于风湿痹痛、腹痛、消化不良",
+  "SidelinePrice":"100.88",
+  "IsServiceable":true,
+  "SidelineDetailIntro":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S000101.jpg",
+                       "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S000102.jpg",
+                       "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S000103.jpg"]
+
+}
+{
+  "SidelineName":"张技师拔罐",
+  "SidelineID":"S0001", 
+  "SidelineImage":"cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S0001.jpg",
+  "SidelineBriefIntro":"适用于风湿痹痛、腹痛、消化不良",
+  "SidelinePrice":"100.88",
+  "IsServiceable":true,
+  "SidelineDetailIntro":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S000101.jpg",
+                       "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S000102.jpg",
+                       "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S000103.jpg"]
+
+}

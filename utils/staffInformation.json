@@ -1,0 +1,18 @@
+{
+  "TechName":"张xx技师", 
+  "TechID":"SYS0001", 
+  "TechPhone":"157030340304",
+  "TechGrade":"高级推拿员",
+  "TechPicture":"cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/SYS0001.jpg",
+  "TechWorkExperience":"4",
+  "TechEvaluation":"对客人认真，手法娴熟，善于交谈"
+}
+{
+  "TechName":"李xx技师", 
+  "TechID":"SYS0002", 
+  "TechPhone":"15707254049",
+  "TechGrade":"普通推拿员",
+  "TechPicture":"cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/SYS0002.jpg",
+  "TechWorkExperience":"2",
+  "TechEvaluation":"对客人认真，手法娴熟，善于交谈"
+}

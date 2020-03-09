@@ -1,0 +1,34 @@
+<!--pages/user/user.wxml-->
+<import src="../template/template.wxml"/>
+<view>
+  <scroll-view scroll-y="true" class="page-body">
+    <view class="user">
+      <view class="user-info">
+        <image class="user-image" name="Head-portrait" src="{{userImage}}"></image>
+        <view class="user-text">
+          <text name="username">{{userName}}</text>
+          <text name="">{{userNumber}}</text>
+        </view>
+        <button open-type="getUserInfo" bindgetuserinfo="bindgetuserinfo" size="mini">获取用户信息</button>
+      </view>
+    </view>
+    <view>
+      <view class="weui-cells weui-cells_after-title">
+        <block wx:for="{{function_item}}" wx:key="this">
+              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                  <view class="weui-cell__hd">
+                      <image src="{{item.icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                  </view>
+                  <view class="weui-cell__bd">{{item.functiontip}}</view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+              </navigator>
+        </block>
+      </view>
+    </view>
+    <view class="exit-login">
+      <button  type="primary" form-type="submit"  bindtap="switchToLogin">退出登录</button>
+    </view>
+  </scroll-view>
+</view>
+<template is="tabBar" data="{{tabBar:tabBar}}"></template>
+<!--is：模板名   data:数据   要在最前面导入模板-->

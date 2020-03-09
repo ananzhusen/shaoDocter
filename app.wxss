@@ -1,0 +1,146 @@
+/**app.wxss**/
+@import 'weui.wxss';
+
+.page{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: '微软雅黑';
+} 
+.page-body{
+   width:100%;
+  height: 100%;
+  display: flex;
+}
+.tabbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+}
+ 
+.tabbar-item {
+  flex-grow: 1;
+  padding: 6rpx 0;
+  text-align: center;
+}
+ 
+.tabbar-icon {
+  width: 46rpx;
+  height: 46rpx;
+  display: block;
+  margin: 0 auto;
+}
+ 
+.tabbar-text {
+  font-size: 24rpx;
+}
+
+
+/*输入框有关样式*/
+.form_input{
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 25px;
+  margin: 10rpx 40rpx 10rpx 40rpx;
+  padding: 30rpx 10rpx 50rpx 10rpx;
+}
+
+.one_input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20rpx 0rpx 20rpx 0;
+}
+.information_input{
+  margin: 30rpx 0 5rpx 0;
+  display: flex;
+  flex-direction: row;
+}
+.line{
+  width:85%;
+  height:3rpx;
+  background:#aaa; 
+  margin: 0rpx 10rpx 0rpx 50rpx;
+  }
+
+  .segmentline{
+    margin: 50rpx 5rpx 2rpx 20rpx;
+    width: 95%;
+    height: 10rpx;
+    border-top: 3rpx dashed #a7a8a8;
+    }
+.text_explain{
+  white-space:nowrap;
+  margin: 0 0 0 70rpx;
+  font-size: 15px;
+}
+.text_choice{
+white-space:nowrap;
+margin: 0 20rpx 0 10rpx;
+font-size: 15px;
+}
+.input_box{
+border: 0px ;
+margin: 0rpx 85rpx 10rpx 0;
+font-size: 15px;
+color: grey;
+}
+.view_twobutton{
+  margin: 100rpx 0 0 200rpx;
+  display: flex;
+  flex-direction: row;
+}
+.button_one{
+  font-size: 15px;
+  width: 200rpx;
+  color: #3CB371;
+  background-color: white;
+  border-bottom: 10rpx solid rgb(220, 224, 221);
+  border-right: 10rpx solid rgb(220, 224, 221);
+  border-radius:20rpx;
+  margin: 0 5rpx 0 5rpx;
+}
+.button_two{
+  width: 200rpx;
+  color: white;
+  background-color: #3CB371;
+  border-bottom: 10rpx solid rgb(12, 133, 52);
+  border-right: 10rpx solid rgb(12, 133, 52);
+  border-radius:20rpx;
+  margin: 0 5rpx 0 5rpx;
+  font-size: 15px;
+}
+
+.view_sureorcancel{
+  margin: 100rpx 0 0 200rpx;
+  display: flex;
+  flex-direction: row;
+}
+.button_sure{
+  width: 200rpx;
+  color: white;
+  background-color: #3CB371;
+  border-bottom: 10rpx solid rgb(12, 133, 52);
+  border-right: 10rpx solid rgb(12, 133, 52);
+  border-radius:20rpx;
+  margin: 0 0rpx 0 10rpx;
+}
+.button_cancel{
+  width: 200rpx;
+  color: #3CB371;
+  background-color: white;
+  border-bottom: 10rpx solid rgb(220, 224, 221);
+  border-right: 10rpx solid rgb(220, 224, 221);
+  border-radius:20rpx;
+  margin: 0 10rpx 0 0;
+}

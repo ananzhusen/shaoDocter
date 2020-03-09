@@ -1,0 +1,193 @@
+{
+	"description": "项目配置文件",
+	"cloudfunctionRoot": "cloud/",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.3",
+	"appid": "wx1846dab8be54a0ff",
+	"projectname": "%E9%82%B5%E5%8C%BB%E7%94%9F%E5%84%BF%E7%AB%A5%E6%8E%A8%E6%8B%BF",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/information/information",
+					"pathName": "pages/information/information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/register/register",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/user/user",
+					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/template/template",
+					"pathName": "pages/template/template",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/master/propaganda/propaganda",
+					"pathName": "pages/master/propaganda/propaganda",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/master/mine/mine",
+					"pathName": "pages/master/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/select/select",
+					"pathName": "pages/select/select",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/guest/home/home",
+					"pathName": "pages/guest/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/guest/store/store",
+					"pathName": "pages/guest/store/store",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/information/information",
+					"pathName": "pages/information/information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/master/propaganda/propaganda",
+					"pathName": "pages/master/propaganda/propaganda",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/master/propaganda/page/stuffInfo/stuffInfo",
+					"pathName": "pages/master/propaganda/page/stuffInfo/stuffInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/master/propaganda/page/staffInfo/staffInfo",
+					"pathName": "pages/master/propaganda/page/staffInfo/staffInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/master/propaganda/page/storeInfo/storeInfo",
+					"pathName": "pages/master/propaganda/page/storeInfo/storeInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/master/propaganda/page/stuffInfo/stuffInfo",
+					"pathName": "pages/master/propaganda/page/stuffInfo/stuffInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/master/propaganda/page/staffInfo/staffInfo",
+					"pathName": "pages/master/propaganda/page/staffInfo/staffInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/master/propaganda/page/storeInfo/storeInfo",
+					"pathName": "pages/master/propaganda/page/storeInfo/storeInfo",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

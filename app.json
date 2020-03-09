@@ -1,0 +1,77 @@
+{
+  "pages": [
+    "pages/information/information",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/home/home",
+    "pages/store/store",
+    "pages/template/template",
+    "pages/master/mainten/mainten",
+    "pages/master/propaganda/propaganda",
+    "pages/select/select",
+    "pages/guest/home/home",
+    "pages/guest/store/store",
+    "pages/master/propaganda/page/company/company",
+    "pages/master/propaganda/page/push/push",
+    "pages/master/propaganda/page/storeInfo/storeInfo",
+    "pages/master/propaganda/page/staffInfo/staffInfo",
+    "pages/master/propaganda/page/staffInfo/staffDetailInfo/staffDataInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3CB371",
+    "navigationBarTitleText": "邵医生儿童推拿",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/guest/home/home",
+        "text": "首页",
+        "iconPath": "/images/icon/home.png",
+        "selectedIconPath": "/images/icon/home_selected.png"
+      },
+      {
+        "pagePath": "pages/guest/store/store",
+        "text": "商品和订单",
+        "iconPath": "/images/icon/store.png",
+        "selectedIconPath": "/images/icon/store_selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/icon/user.png",
+        "selectedIconPath": "/images/icon/user_selected.png"
+      },
+      {
+        "pagePath": "pages/master/propaganda/propaganda",
+        "text": "宣传",
+        "iconPath": "/images/icon/master/propaganda1.png",
+        "selectedIconPath": "/images/icon/master/propaganda0.png",
+        "clas": "tabbar-item",
+        "active": true
+      },
+      {
+        "pagePath": "pages/master/mainten/mainten",
+        "text": "维护",
+        "iconPath": "/images/icon/master/mainten1.png",
+        "selectedIconPath": "/images/icon/master/mainten0.png",
+        "clas": "tabbar-item",
+        "active": false
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "true"
+    }
+  }
+}

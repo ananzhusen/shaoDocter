@@ -1,0 +1,63 @@
+{
+  "CommentID":"T0001",
+  "CommentNum":"3",
+  "Comments":[{ 
+    "Coverall":"3",
+    "Ccontent":"对顾客热情、有耐心,真正的站在顾客的角度为解决各种身体问题",
+    "Cimages":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001001C01.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001001C02.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001001C03.jpg"],
+    "CDate":"2019-11-12"
+  },
+  { 
+    "Coverall":"3",
+    "Ccontent":"对顾客热情、有耐心,真正的站在顾客的角度为解决各种身体问题",
+    "Cimages":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001001C01.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001001C02.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001001C03.jpg"],
+    "CDate":"2019-11-11"
+  },
+  {
+    "Coverall":"4",
+    "Ccontent":"对顾客热情、有耐心,真正的站在顾客的角度为解决各种身体问题",
+    "Cimages":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001001C01.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001001C02.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/T0001001C03.jpg"],
+    "CDate":"2019-11-13"
+  }
+]
+}
+{
+  "CommentID":"S0001",
+  "CommentNum":"1",
+  "Comments":[{ 
+    "Coverall":"3",
+    "Ccontent":"拔完罐真的是太舒服了，好评，技术服务态度很好！",
+    "Cimages":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S0001001C01.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S0001001C01.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/S0001001C01.jpg"],
+    "CDate":"2019-11-12"
+  }
+]
+}
+{
+  "CommentID":"M0001",
+  "CommentNum":"2",
+  "Comments":[{ 
+    "Coverall":"3",
+    "Ccontent":"经典的感冒灵颗粒，价格比药店便宜，屯着以备不时之需，好评！",
+    "Cimages":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/M0001001C01.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/M0001001C02.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/M0001001C03.jpg"],
+    "CDate":"2019-11-12"
+  },
+  {
+    "Coverall":"4",
+    "Ccontent":"对顾客热情、有耐心,真正的站在顾客的角度为解决各种身体问题",
+    "Cimages":["cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/M0001002C01.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/M0001002C02.jpg",
+             "cloud://test4-ht5oe.7465-test4-ht5oe-1300471109/M0001002C03.jpg"],
+    "CDate":"2019-12-13"
+  }
+]
+}
